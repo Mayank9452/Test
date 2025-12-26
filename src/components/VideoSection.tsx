@@ -13,9 +13,9 @@ export default function VideoSection() {
         />
       </div>
 
-      <div className="w-full glass-card p-3 flex flex-col justify-center gap-3">
+      <div className="w-full  p-3 flex flex-col justify-center gap-3 gradient-pink-yellow">
 
-        <h3 className="text-lg font-extrabold text-gradient-gold leading-tight ">
+        <h3 className="text-lg font-extrabold text-yellow-400  leading-tight ">
           About BidBlast
         </h3>
 
@@ -23,14 +23,14 @@ export default function VideoSection() {
           Welcome to Bidlbast, the exciting daily bidding game.
         </p>
 
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-muted-foreground text-gradient-light font-semibold">
           To Know More, click below button.
         </p>
 
         <button className="pushable w-fit mt-2">
           <span className="cs-shadow" />
-          <span className="edge gradient-casino" />
-          <span className="front gradient-casino text-white px-6 py-2 rounded-xl text-sm font-semibold">
+          <span className="edge gradient-light" />
+          <span className="front gradient-light text-black px-6 py-2 rounded-xl text-sm font-semibold">
             Get Details
           </span>
         </button>

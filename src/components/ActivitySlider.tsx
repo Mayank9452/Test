@@ -34,13 +34,14 @@ export default function ActivitySlider({
 }: {
   activities: Activity[]
 }) {
+  const gradientBackground = ["gradient-pink-yellow","gradient-pink-violet"];
   return (
     <div className="relative overflow-hidden">
       <div className="flex gap-4 animate-slide-right">
         {[...activities, ...activities].map((activity, index) => (
           <div
             key={`${activity.id}-${index}`}
-            className="glass-card rounded-xl p-4 min-w-[240px] card-shadow"
+            className={` rounded-xl p-4 min-w-[240px] card-shadow ${gradientBackground[index % gradientBackground.length]}`}
           >
             {/* <p className="text-xs font-medium leading-snug">
               {activity.message}
@@ -50,7 +51,7 @@ export default function ActivitySlider({
               {activity.message}
             </h3>
 
-            <span className="text-[10px] text-muted-foreground mt-2 block">
+            <span className="text-[10px] text-white-foreground mt-2 block">
               {activity.time}
             </span>
           </div>
